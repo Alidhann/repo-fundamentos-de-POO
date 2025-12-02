@@ -1,5 +1,5 @@
 //Clase de postres-Equipo 2
-class Postre {
+export class Postre {
 
   private nombre: string;
   private precio: number;
@@ -24,7 +24,7 @@ class Postre {
 }
 
 
-class Pastel extends Postre {
+export class Pastel extends Postre {
   constructor(nombre: string, precio: number) {
     super(nombre, precio);
   }
@@ -36,7 +36,7 @@ class Pastel extends Postre {
 }
 
 // HERENCIA: Gelatina extiende Postre
-class Gelatina extends Postre {
+export class Gelatina extends Postre {
   constructor(nombre: string, precio: number) {
     super(nombre, precio);
   }

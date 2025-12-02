@@ -1,8 +1,8 @@
 //Eduardo Lopez Madera
 
-abstract class Bebidas {
+export abstract class Bebidas {
     private nombre: string;
-    private precio: number; 
+    private precio: number;
 
     constructor(nombre: string, precio: number) {
         this.nombre = nombre
@@ -14,7 +14,7 @@ abstract class Bebidas {
     }
 
     setNombre(nombre: string): void {
-        this.nombre =nombre
+        this.nombre = nombre
     }
 
     getPrecio(): number {
@@ -25,20 +25,20 @@ abstract class Bebidas {
         this.precio = precio
     }
 
-     abstractinfo(): void {
-       
+    abstract info(): void
 
-    }
+
+
 }
 
-class Jugo extends Bebidas {
+export class Jugo extends Bebidas {
 
     constructor(nombre: string, precio: number) {
-        super(nombre,precio)
+        super(nombre, precio)
     }
 
     info(): void {
-        console.log(`${this.getNombre} tiene el precio de ${this.getPrecio}`)
+        console.log(`${this.getNombre()} tiene el precio de ${this.getPrecio()}`)
     }
 
 }
