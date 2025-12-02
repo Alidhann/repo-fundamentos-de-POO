@@ -1,7 +1,7 @@
 //Israel Belueta Ponce
 
-abstract class Comida {
-    
+export abstract class Comida {
+
     private nombre: string;
     private calorias: number;
 
@@ -10,11 +10,11 @@ abstract class Comida {
         this.calorias = calorias;
     }
 
-     getNombre(): string {
+    getNombre(): string {
         return this.nombre;
     }
 
-     getCalorias(): number {
+    getCalorias(): number {
         return this.calorias;
     }
 
@@ -26,7 +26,7 @@ abstract class Comida {
 }
 
 
-class Tacos extends Comida {
+export class Tacos extends Comida {
     private tipoTortilla: string;
 
     constructor(nombre: string, calorias: number, tipoTortilla: string) {
@@ -40,7 +40,7 @@ class Tacos extends Comida {
     }
 }
 
-class Pasta extends Comida {
+export class Pasta extends Comida {
     private tipoSalsa: string;
 
     constructor(nombre: string, calorias: number, tipoSalsa: string) {
