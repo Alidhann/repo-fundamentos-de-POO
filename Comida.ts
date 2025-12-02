@@ -53,19 +53,5 @@ class Pasta extends Comida {
 }
 
 function probarRestaurante() {
-
-    const menu: Comida[] = [
-        new Tacos("Tacos al Pastor", 450, "Maíz"),
-        new Pasta("Spaghetti Carbonara", 700, "Blanca")
-    ];
-
-    menu.forEach(plato => {
-
-        plato.mostrarInformacion();
-
-        plato.cocinar();
-        
-    });
 }
-
 probarRestaurante();
