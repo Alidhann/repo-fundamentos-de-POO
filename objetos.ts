@@ -1,5 +1,6 @@
 //objetos de cada clase
 import { Jugo } from "./Bebidas";
+import { Refresco } from "./Bebidas";
 import { Pastel } from "./clase-postres";
 import { Gelatina } from "./clase-postres";
 import { Tacos } from "./Comida";
@@ -8,7 +9,9 @@ import { Pasta } from "./Comida";
 //Bebidas
 
 const Jugo1 = new Jugo("Jugo de Naranja", 26)
+const Refresco1 = new Refresco("Coca-Cola", 22)
 Jugo1.info();
+Refresco1.info()
 
 //Postre
 const pastel = new Pastel("Chocolate", 80);

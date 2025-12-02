@@ -30,7 +30,7 @@ export class Pastel extends Postre {
 
 
   describir(): void {
-    console.log(`El pastel "${this.getNombre()}" es dulce y esponjoso.`);
+    console.log(`El pastel "${this.getNombre()}" es dulce y esponjoso. Su precio es de:${this.getPrecio()} `);
   }
 }
 
@@ -41,6 +41,6 @@ export class Gelatina extends Postre {
   }
 
   describir(): void {
-    console.log(`La gelatina "${this.getNombre()}" es fresca y ligera.`);
+    console.log(`La gelatina "${this.getNombre()}" es fresca y ligera. Su precio es de:${this.getPrecio()}`);
   }
 }
