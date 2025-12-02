@@ -20,9 +20,8 @@ gelatina.describir();
 //Comida
 const tacos = new Tacos("Tacos al pastor", 3000, "Maiz");
 const pasta = new Pasta("Pasta Alfredo", 450, "Alfredo");
-function probarRestaurante() {
-  tacos.mostrarInformacion();
-  tacos.cocinar();
-  pasta.mostrarInformacion();
-  pasta.cocinar();
-}
+
+tacos.mostrarInformacion();
+tacos.cocinar();
+pasta.mostrarInformacion();
+pasta.cocinar();
