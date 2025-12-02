@@ -43,3 +43,13 @@ export class Jugo extends Bebidas {
 
 }
 
+export class Refresco extends Bebidas {
+
+    constructor(nombre: string, precio: number) {
+        super(nombre, precio)
+    }
+
+    info(): void {
+        console.log(`${this.getNombre()} tiene un precio de ${this.getPrecio()} pesos`)
+    }
+}
