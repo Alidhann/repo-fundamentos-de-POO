@@ -1,5 +1,5 @@
 //Clase de postres-Equipo 2
-export class Postre {
+export abstract class Postre {
 
   private nombre: string;
   private precio: number;
@@ -18,10 +18,9 @@ export class Postre {
   }
 
 
-  public describir(): void {
-    console.log("Este es un postre.");
-  }
+  abstract describir(): void;
 }
+
 
 
 export class Pastel extends Postre {
@@ -30,7 +29,7 @@ export class Pastel extends Postre {
   }
 
 
-  public describir(): void {
+  describir(): void {
     console.log(`El pastel "${this.getNombre()}" es dulce y esponjoso.`);
   }
 }
@@ -41,7 +40,7 @@ export class Gelatina extends Postre {
     super(nombre, precio);
   }
 
-  public describir(): void {
+  describir(): void {
     console.log(`La gelatina "${this.getNombre()}" es fresca y ligera.`);
   }
 }
